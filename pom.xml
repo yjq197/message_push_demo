@@ -28,5 +28,14 @@
         <maven.compiler.target>8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-
+    <dependencyManagement>
+    <dependencies>
+    <!--腾讯sdk(目前用在短信上)-->
+    <dependency>
+        <groupId>com.tencentcloudapi</groupId>
+        <artifactId>tencentcloud-sdk-java</artifactId>
+        <version>3.1.510</version>
+    </dependency>
+    </dependencies>
+    </dependencyManagement>
 </project>
