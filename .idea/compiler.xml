@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ms_support" />
+        <module name="ms_stream" />
+        <module name="ms_service" />
+        <module name="ms_web" />
+        <module name="ms_cron" />
+        <module name="ms_common" />
+        <module name="ms_handler" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="handler" target="1.8" />
+      <module name="support" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ms_common" options="-parameters" />
+      <module name="ms_cron" options="-parameters" />
+      <module name="ms_handler" options="-parameters" />
+      <module name="ms_service" options="-parameters" />
+      <module name="ms_stream" options="-parameters" />
+      <module name="ms_support" options="-parameters" />
+      <module name="ms_web" options="-parameters" />
+    </option>
+  </component>
+</project>
